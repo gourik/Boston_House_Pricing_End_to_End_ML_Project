@@ -1,0 +1,14 @@
+1.Create repository in Github account
+2.Copy link from Code and open cmd and change path to G:\revision_ml\end_to_end_ml_projects and then run command:
+  git clone https://github.com/gourik/Boston_House_Pricing_End_to_End_ML_Project.git
+3.Now this creates file in path G:\revision_ml\end_to_end_ml_projects\Boston_House_Pricing_End_to_End_ML_Project
+4.install VS Code..and rest of the steps are written in VS Code
+5.Create a new environment for each new project.
+  change to command prompt
+conda create -p venv python==3.7 -y
+6.create requirement.txt and install all libraries: 
+  pip install -r requirements.txt
+7. We need to push code from VS code to GIT,hence we need to configure Git Cli with Github repository.
+	git config --global user.name "gourik"
+        git config --global user.email "ugourik@gmail.com"
+
