@@ -5,10 +5,48 @@
 4.install VS Code..and rest of the steps are written in VS Code
 5.Create a new environment for each new project.
   change to command prompt
-conda create -p venv python==3.7 -y
+  conda create -p venv python==3.7 -y
 6.create requirement.txt and install all libraries: 
   pip install -r requirements.txt
-7. We need to push code from VS code to GIT,hence we need to configure Git Cli with Github repository.
+7.We need to push code from VS code to GIT,hence we need to configure Git Cli with Github repository.
 	git config --global user.name "gourik"
         git config --global user.email "ugourik@gmail.com"
+8.Adding files to GIT:
+  git add requirements.txt
+  git add.
+9.Commit pushes files from local system to Staging environment
+    git commit -m "This commit has requirements.txt and README.md files"
+10.Using push to publish local commits:
+   git push <remote><branch>
+   git push origin main
+11.Create app.py to create end to end project
+12.Create template folder,as render_template() looks for templates folder, and inside this folder create a file called 
+   home.html.
+13.Now, execute app.py:
+   python app.py
+14.Install postman app to give input into URL for /predict_api
+   In body section, convert raw data into json and create json data and validate it using JSON validator online.
+Sample JSON:
+{
+    "data": {
+        "CRIM": 0.00632,
+        "ZN": 18.0,
+        "INDUS": 2.31,
+        "CHAS": 0.0,
+        "NOX": 0.538,
+        "RM": 6.575,
+        "AGE": 65.2,
+        "DIS": 4.0900,
+        "RAD": 1.0,
+        "TAX":296,
+        "PTRATIO":15.3,
+        "B":396.90,
+        "LSTAT":4.98
+        }
+}
+and then POST the above data.We must get output:30.0864957
+15.Now, commit everything to GIT.
+  git add .
+  git commit -m " "
+  git push 
 

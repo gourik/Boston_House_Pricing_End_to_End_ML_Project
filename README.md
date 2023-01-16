@@ -25,3 +25,12 @@ git add requirements.txt
 git add.
 ```
 git status 
+Commit pushes files from local system to Staging environment
+```
+git commit -m "This commit has requirements.txt and README.md files"
+```
+Using push to publish local commits:
+```
+git push <remote><branch>
+git push origin main
+```

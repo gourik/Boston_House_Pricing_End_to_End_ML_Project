@@ -9,6 +9,7 @@ import matplotlib.pyplot as plt
 import pandas as pd
 import numpy as np
 import seaborn as sns
+import sklearn
 
 #let's load the Boston House Pricing dataset:
 from sklearn.datasets import load_boston
@@ -97,6 +98,9 @@ X_test=sc.transform(X_test) #we use transform() function just to apply different
 #we use internally Gradient Descent and our main aim is to reach Global minima, if
 #we standardize all units to the same, convergence to global minima happens quickly..
 
+#pickling the standardization:
+import pickle
+pickle.dump(sc,open(r'G:\revision_ml\end_to_end_ml_projects\Boston_House_Pricing_End_to_End_ML_Project\scaling.pkl','wb'))    
 #Model training:
 from sklearn.linear_model import LinearRegression
 reg=LinearRegression()
